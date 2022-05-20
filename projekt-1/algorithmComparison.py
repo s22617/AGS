@@ -13,7 +13,7 @@ if __name__ == "__main__":
     # QUICKSORT
     # random
 
-    A = random
+    A = list(random)
     t0 =time.time()
     quicksort(A, 0, 399999)
     t1 = time.time()
@@ -38,7 +38,7 @@ if __name__ == "__main__":
     # HEAPSORT
     # random
 
-    A = random
+    A = list(random)
     t0 =time.time()
     build_max_heap(A)
     t1 = time.time()
@@ -46,7 +46,7 @@ if __name__ == "__main__":
 
     # sorted in ascending order
 
-    B = ascending
+    B = list(ascending)
     t0 =time.time()
     build_max_heap(B)
     t1 = time.time()
@@ -54,7 +54,7 @@ if __name__ == "__main__":
 
     # sorted in descending order
 
-    C = descending
+    C = list(descending)
     t0 =time.time()
     build_max_heap(C)
     t1 = time.time()
@@ -63,7 +63,7 @@ if __name__ == "__main__":
     # MERGESORT
     #random
 
-    A = random
+    A = list(random)
     t0 =time.time()
     sort_merge(A)
     t1 = time.time()
@@ -71,7 +71,7 @@ if __name__ == "__main__":
 
     # sorted in ascending order
 
-    B = ascending
+    B = list(ascending)
     t0 =time.time()
     sort_merge(B)
     t1 = time.time()
@@ -79,24 +79,24 @@ if __name__ == "__main__":
 
     # sorted in descending order
 
-    C = descending
+    C = list(descending)
     t0 =time.time()
     sort_merge(C)
     t1 = time.time()
     print("Mergesort on descending array: ", t1 - t0)
 
-    # SELECTION SORT
+    # INSERTION SORT
     #random
 
-    A = random
-    t0 =time.time()
-    insertionSort(A)
-    t1 = time.time()
-    print("\nInsertionsort on random array: ", t1 - t0)
+    # A = list(random)
+    # t0 =time.time()
+    # insertionSort(A)
+    # t1 = time.time()
+    # print("\nInsertionsort on random array: ", t1 - t0)
 
     # sorted in ascending order
 
-    B = ascending
+    B = list(ascending)
     t0 =time.time()
     insertionSort(B)
     t1 = time.time()
@@ -104,8 +104,8 @@ if __name__ == "__main__":
 
     # sorted in descending order
 
-    C = descending
-    t0 =time.time()
-    insertionSort(C)
-    t1 = time.time()
-    print("Insertionsort on descending array: ", t1 - t0)
+    # C = list(descending)
+    # t0 =time.time()
+    # insertionSort(C)
+    # t1 = time.time()
+    # print("Insertionsort on descending array: ", t1 - t0)
